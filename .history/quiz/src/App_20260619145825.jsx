@@ -17,6 +17,7 @@ function App() {
       <h1>Quiz de Programação</h1>
       {quizState.gameStage === "Start" && <Welcome />}
       {quizState.gameStage === "Playing" && <Question />}
+      <Welcome />
     </div>
   );
 }
