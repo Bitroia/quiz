@@ -10,9 +10,8 @@ export const Question = () => {
 
   const onSelectOption = (option) => {
     dispatch({
-      type: "CHECK_ANSWER",
-      payload: { answer: currentQuestion.answer, option },
-    });
+      type: "CHECK_ANSWER"
+    })
   };
 
   return (

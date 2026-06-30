@@ -8,11 +8,8 @@ export const Question = () => {
   const [quizState, dispatch] = useContext(QuizContext);
   const currentQuestion = quizState.questions[quizState.currentQuestion];
 
-  const onSelectOption = (option) => {
-    dispatch({
-      type: "CHECK_ANSWER",
-      payload: { answer: currentQuestion.answer, option },
-    });
+  const selectOption = () => {
+    console.log("teste");
   };
 
   return (
@@ -27,7 +24,7 @@ export const Question = () => {
             option={option}
             key={option}
             answer={currentQuestion.answer}
-            selectOption={() => onSelectOption(option)}
+            selectOption
           />
         ))}
       </div>
